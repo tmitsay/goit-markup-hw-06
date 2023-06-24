@@ -10,6 +10,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/media.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -57,6 +58,73 @@
             </li>
           </ul>
         </address>
+        <button class="charm-open-bt" type="button">
+          <svg class="charm-menu-icon" width="32" height="22">
+            <use href="./images/icons.svg#icon-charm-menu"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="charm-menu">
+        <button type="button" class="charm-close-bt">
+          <svg class="icon-close" width="24" height="24">
+            <use href="./images/icons.svg#icon-Close"></use>
+          </svg>
+        </button>
+        <ul class="charm-menu-list list">
+          <li class="charm-menu-item">
+            <a class="charm-menu-link link" href="./index.html">Studio </a>
+          </li>
+          <li class="charm-menu-item">
+            <a class="charm-menu-link link" href="./portfolio.html"
+              >Portfolio
+            </a>
+          </li>
+          <li class="charm-menu-item">
+            <a class="charm-menu-link link" href="">Contacts </a>
+          </li>
+        </ul>
+        <ul class="charm-menu-list list">
+          <li class="charm-menu-item">
+            <a class="charm-menu-link link" href="mailto:info@devstudio.com"
+              >info@devstudio.com
+            </a>
+          </li>
+          <li class="charm-menu-item">
+            <a class="charm-menu-link link" href="tel:+110001111111"
+              >+11 (000) 111-11-11
+            </a>
+          </li>
+        </ul>
+        <ul class="charm-menu-list list">
+          <li class="charm-menu-item-ic">
+            <a class="charm-menu-icons link" href="#">
+              <svg class="charm-menu-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-instagram-2"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="charm-menu-item-ic">
+            <a class="charm-menu-icons link" href="#">
+              <svg class="charm-menu-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-twitter-1"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="charm-menu-item-ic">
+            <a class="charm-menu-icons link" href="#">
+              <svg class="charm-menu-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-facebook-1"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="charm-menu-item-ic">
+            <a class="charm-menu-icons link" href="#">
+              <svg class="charm-menu-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-linkedin-1"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
       </div>
     </header>
 
@@ -170,6 +238,10 @@
           <ul class="team-list list">
             <li class="team-item">
               <img
+                srcset="
+                  ./images/Team_Card-1.jpg 1x,
+                  ./images/Mobile/Mark.jpg 2x
+                "
                 src="./images/Team_Card-1.jpg"
                 alt="product designer"
                 width="264"
@@ -211,6 +283,7 @@
             </li>
             <li class="team-item">
               <img
+                srcset="./images/Team_Card-2.jpg 1x, ./images/Mobile/Tom.jpg 2x"
                 src="./images/Team_Card-2.jpg"
                 alt="fronted developer"
                 width="264"
@@ -252,7 +325,15 @@
             </li>
 
             <li class="team-item">
-              <img src="./images/Team_Card-3.jpg" alt="marketing" width="264" />
+              <img
+                srcset="
+                  ./images/Team_Card-3.jpg   1x,
+                  ./images/Mobile/Camila.jpg 2x
+                "
+                src="./images/Team_Card-3.jpg"
+                alt="marketing"
+                width="264"
+              />
               <div class="container-card">
                 <h3 class="team-subtitle">Camila Garcia</h3>
                 <p class="team-text">Marketing</p>
@@ -291,6 +372,10 @@
 
             <li class="team-item">
               <img
+                srcset="
+                  ./images/Team_Card-4.jpg   1x,
+                  ./images/Mobile/Daniel.jpg 2x
+                "
                 src="./images/Team_Card-4.jpg"
                 alt="ui designer"
                 width="264"
@@ -333,7 +418,9 @@
           </ul>
         </div>
       </section>
-      <!-- Customers-->
+
+      <!-- Customers -->
+
       <section class="customers">
         <div class="container">
           <h2 class="customers-title">Customers</h2>
@@ -385,7 +472,7 @@
       </section>
     </main>
 
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="container footer-container">
         <div class="container-logo">
           <a class="footer-logo link" href="./index.html"
@@ -533,7 +620,7 @@
           <button class="modal-btn" type="submit">Send</button>
         </form>
       </div>
-    </div>
+    </div>  -->
     <script src="./js/modal.js"></script>
   </body>
 </html>
