@@ -101,8 +101,9 @@ img {
 }
 
 .header-logo {
-  margin-right: 249px;
+  /* margin-right: 249px; */
   display: block;
+  margin-left: 16px;
 }
 
 .header-menu {
@@ -126,7 +127,7 @@ img {
   color: var(--color-button);
 }  */
 
-.current-mob {
+/* .current-mob {
   color: #404bbf;
   position: relative;
 }
@@ -141,7 +142,7 @@ img {
   left: 0;
   bottom: 8px;
   bottom: -1px;
-}
+} */
 
 /*! --------------ADDRESS---------------- */
 /* .header-add {
@@ -174,7 +175,7 @@ img {
   background-color: #ffffff;
   cursor: pointer;
   display: block;
-  padding: 24px 15px;
+  /* padding: 24px 15px; */
   height: 22px;
 }
 
@@ -185,30 +186,40 @@ img {
 .mobile-menu {
   position: fixed;
   z-index: 999;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
   background-color: var(--back-color);
   padding: 80px 35px 40px 40px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   overflow: auto;
-  transform: translateX(100%);
+  transform: translateX(0);
   transition: transform 250ms ease-in-out;
 }
 
 .mobile-menu.is-hidden {
-  transform: translateX(0);
+  transform: translateX(100%);
 }
 
 .close-btn {
   width: 24px;
+  position: absolute;
   height: 24px;
   display: block;
-  margin-left: auto;
-  margin-bottom: 32px;
+  border: 1px solid var(--back-second-color);
+  /* margin-left: auto;
+  margin-bottom: 32px; */
   border-radius: 50%;
   background-color: #e7e9fc;
+  right: 24px;
+  top: 24px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
 }
 
 .icon-close {
@@ -232,8 +243,12 @@ img {
   text-transform: capitalize;
 }
 
-.mobile-menu-add {
-  padding: 40px;
+.number {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.11; /* 40/36 */
+  text-transform: capitalize;
+  letter-spacing: 0.02;
 }
 
 .text {
@@ -245,27 +260,32 @@ img {
   letter-spacing: 0.02;
 }
 
+.mobile-contacts {
+  margin-top: auto;
+}
+
 .mobile-socials {
   margin-top: 48px;
   display: flex;
   justify-content: center;
-  gap: 56px;
+  gap: 44px;
 }
 
 .mobile-soc {
-  width: 100%;
-  height: 100%;
+  /* width: 100%;
+  height: 100%; */
   background-color: var(--text-logo);
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 8px 8px;
+  width: 40px;
+  height: 40px;
 }
 
-.mobile-socials-items {
-  width: 40ps;
-  height: 40px;
+.mobile-menu-add {
+  margin-bottom: 40px;
 }
 
 .mobile-socials-icon {
@@ -373,12 +393,14 @@ img {
   letter-spacing: 0.02em;
   color: var(--color-nav);
   margin-bottom: 8px;
+  text-align: center;
 }
 
 .table-text {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  font-weight: 500;
 }
 
 /*! --------------SECTION2---------------- */
@@ -591,13 +613,16 @@ img {
 
 .footer-container {
   display: flex;
-  /* align-items: baseline; */
-  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: column;
+  gap: 72px;
 }
 
 .footer-icons-container {
-  margin-top: 72px;
+  gap: 72px;
   max-width: 208px;
+  align-items: center;
+  /* margin-left: 110px; */
 }
 
 .footer-subtitle {
@@ -639,12 +664,15 @@ img {
 }
 
 .email-box {
-  margin-top: 72px;
+  gap: 72px;
+  width: 100%;
+  /* text-align: center; */
 }
 
 .email-title {
   font-weight: 500;
   text-align: center;
+  flex-direction: column;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -654,8 +682,15 @@ img {
 
 .email-form {
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
+  flex-direction: column;
+  align-items: center;
   gap: 16px;
+  /* gap: 24px; */
+  width: 100%;
+}
+
+.email-form-label {
   width: 100%;
 }
 
@@ -663,14 +698,16 @@ img {
   border: 1px solid var(--back-color);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
-  width: 264px;
+  /* width: 264px; */
+  width: 100%;
   height: 40px;
   background-color: transparent;
   font-size: 12px;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  padding-left: 16px;
+  /* padding-left: 16px; */
   color: var(--back-color);
+  /* display: inline-block; */
 }
 
 .input-email::placeholder {
