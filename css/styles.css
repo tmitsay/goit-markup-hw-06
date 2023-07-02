@@ -193,7 +193,8 @@ img {
   padding: 80px 35px 40px 40px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  /* align-items: center; */
+  /* justify-content: space-between; */
   overflow: auto;
   transform: translateX(0);
   transition: transform 250ms ease-in-out;
@@ -597,7 +598,6 @@ img {
   color: var(--text-logo);
   display: block;
   margin-bottom: 16px;
-  text-align: center;
 }
 
 .footer-logo span {
@@ -705,8 +705,8 @@ img {
   font-size: 12px;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  /* padding-left: 16px; */
   color: var(--back-color);
+  padding-left: 16px;
   /* display: inline-block; */
 }
 
