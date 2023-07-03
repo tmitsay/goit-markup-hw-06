@@ -4,9 +4,6 @@
     padding: 0 16px;
   }
 
-  /* .mobile-menu {
-    align-items: flex-start;
-  } */
 
   .mobile-menu-address {
     gap: 24px;
@@ -84,6 +81,10 @@
   }
 
   .mobile-open-btn {
+    display: none;
+  }
+
+  .mobile-menu {
     display: none;
   }
 
