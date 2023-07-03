@@ -1,12 +1,12 @@
 @media screen and (min-width: 428px) {
   .container {
     max-width: 396px;
-    padding: 0;
+    padding: 0 16px;
   }
 
-  .mobile-menu {
+  /* .mobile-menu {
     align-items: flex-start;
-  }
+  } */
 
   .mobile-menu-address {
     gap: 24px;
@@ -40,7 +40,7 @@
 
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 738px;
+    max-width: 768px;
     padding: 0 16px;
   }
 
@@ -275,6 +275,10 @@
   }
 
   .mobile-open-btn {
+    display: none;
+  }
+
+  .mobile-menu {
     display: none;
   }
 
